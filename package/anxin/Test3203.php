@@ -13,7 +13,7 @@ $str = array (
 				"contractName" => "测试合同",
 				"signLocations" => array (
 						array (
-								"signOnPage" => 4,
+								"signOnPage" => 2,
 								"signLocationLBX" => 311,
 								"signLocationLBY" => 389,
 								"signLocationRUX" => 411,
@@ -21,36 +21,36 @@ $str = array (
 						) 
 				),
 				"signInfos" => array (
-						array (
-								"userId" => "3AC9457E88264288E050007F010021FF",
+/* 						array (
+								"userId" => "5D742D9D64D34614E05312016B0AD814",
 								"authorizationTime" => "20160214171200",
 								"location" => "成都",
 								"signLocations" => array (
 										array (
-												"signOnPage" => 4,
+												"signOnPage" => 1,
 												"signLocationLBX" => 121,
 												"signLocationLBY" => 443,
 												"signLocationRUX" => 198,
 												"signLocationRUY" => 463 
 										),
 										array (
-												"signOnPage" => 6,
+												"signOnPage" => 1,
 												"signLocationLBX" => 96,
-												"signLocationLBY" => 420,
+												"signLocationLBY" => 210,
 												"signLocationRUX" => 161,
 												"signLocationRUY" => 438 
 										) 
 								),
 								"projectCode" => "002",
-								"isProxySign" => 1 
-						),
+								"isProxySign" => 0 
+						), */
 						array (
-								"userId" => "2ED6A713B9DED7EFE050007F01007886",
+								"userId" => "5DDA59FC95384BBAE05311016B0AA615",
 								"authorizationTime" => "20160214171200",
 								"location" => "成都",
 								"signLocations" => array (
 										array (
-												"signOnPage" => 5,
+												"signOnPage" => 2,
 												"signLocationLBX" => 181,
 												"signLocationLBY" => 133,
 												"signLocationRUX" => 283,
@@ -58,7 +58,7 @@ $str = array (
 										) 
 								),
 								"projectCode" => "002",
-								"isProxySign" => 1 
+								"isProxySign" => 0 
 						) 
 				) 
 		) 
@@ -73,5 +73,5 @@ $txCode = "3203";
 
 $uri = "platId/" . $userId . "/txCode/" . $txCode . "/transaction";
 
-echo curl_custom_postfields ( $uri, $data, $sign, "./file/2.pdf" );
+echo curl_custom_postfields ( $uri, $data, $sign, "./file/1.pdf" );
 ?>

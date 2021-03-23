@@ -42,10 +42,9 @@ function curl_custom_postfields($uri, $data, $signature, $file) {
 function curl($boundary, $uri, $req) {
 	include "SystemConstant.php";
 	$curl = curl_init ();
-// 	curl_setopt ( $curl, CURLOPT_URL, "https://192.168.113.125:8443/FEP/" . $uri );
-// 	curl_setopt ( $curl, CURLOPT_URL, "https://210.74.42.33:9443/FEP/" . $uri );
-	curl_setopt ( $curl, CURLOPT_URL, "https://cs.anxinsign.com/FEP/" . $uri );
-	CURL_SETOPT ( $curl, CURLOPT_PORT, 443 );
+ 	curl_setopt ( $curl, CURLOPT_URL, "https://210.74.42.33:9443/FEP/" . $uri );
+//	curl_setopt ( $curl, CURLOPT_URL, "https://cs.anxinsign.com/FEP/" . $uri );
+ 	CURL_SETOPT ( $curl, CURLOPT_PORT, 9443 );
 	curl_setopt ( $curl, CURLOPT_ENCODING, "" );
 	curl_setopt ( $curl, CURLOPT_RETURNTRANSFER, TRUE ); // 设置是否返回信息
 	curl_setopt ( $curl, CURLOPT_POST, TRUE ); // 设置为POST方式

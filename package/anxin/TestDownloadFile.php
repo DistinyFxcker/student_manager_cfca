@@ -2,15 +2,15 @@
 // Dir
 include "SystemConstant.php";
 
-$contractNo = "JK20160902000000001";
+$contractNo = "WT20181121000000085";
 
 $curl = curl_init ();
-curl_setopt ( $curl, CURLOPT_URL, "https://cs.anxinsign.com/FEP/platId/3391C68C0F387426E0538D02030A7071/contractNo/{$contractNo}/downloading" );
-curl_setopt ( $curl, CURLOPT_PORT, 443 );
+curl_setopt ( $curl, CURLOPT_URL, "https://210.74.42.33:9443/FEP/platId/79A770D3F4746320E05311016B0AD488/contractNo/{$contractNo}/downloading" );
+curl_setopt ( $curl, CURLOPT_PORT, 9443 );
 curl_setopt ( $curl, CURLOPT_RETURNTRANSFER, TRUE ); // 设置是否返回信息
 curl_setopt ( $curl, CURLOPT_HEADER, FALSE );
 
-curl_setopt ( $curl, CURLOPT_SSLVERSION, 5 );
+curl_setopt ( $curl, CURLOPT_SSLVERSION, 6 );
 curl_setopt ( $curl, CURLOPT_VERBOSE, TRUE ); // 开发模式，会把通信时的信息显示出来
 curl_setopt ( $curl, CURLOPT_SSL_VERIFYPEER, TRUE ); // 验证服务器证书
 curl_setopt ( $curl, CURLOPT_SSL_VERIFYHOST, FALSE ); // 不检查证书中域名
@@ -33,7 +33,7 @@ if (curl_errno ( $curl )) { // 出错则显示错误信息
 	echo curl_error ( $curl );
 }
 
-$destination_folder = "./file/";
+$destination_folder = "D://test";
 $newfname = $destination_folder . $contractNo . ".pdf";
 $newf = fopen ( $newfname, "wb" );
 fwrite ( $newf, $response );

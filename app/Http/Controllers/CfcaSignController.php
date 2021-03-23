@@ -31,8 +31,13 @@ class CfcaSignController extends Controller{
                 "authenticationMode" => "公安部"
             ),
         );
-//        dd(json_encode($str),$service::KeysPath(),config('constance.keystorePassword'),config('constance.keystoreAlias'));
-        $sign = $service->signature(json_encode($str),$service::KeysPath(),config('constance.keystorePassword'),config('constance.keystoreAlias'));
+        $sign = $service->signature(json_encode($str),$service::KeysPath(),config('cfca.keystorePassword'),config('cfca.keystoreAlias'));
+	return $sign;
     }
+
+    public function sendMessage(){
+	
+    }
+
 
 }

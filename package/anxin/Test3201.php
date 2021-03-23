@@ -19,6 +19,7 @@ $str = array (
 								"projectCode" => "003",
 								"isProxySign" => "0",
 								"isCopy" => "0" 
+								//"IsCheckProjectCode"=>"1";
 						),
 						array (
 								"userId" => "35FE921E7CF0F890E050007F01004E87",
@@ -28,6 +29,7 @@ $str = array (
 								"projectCode" => "003",
 								"isProxySign" => "0",
 								"isCopy" => "0"
+								//"IsCheckProjectCode"=>"1";
 						)
 				),
 				"investmentInfo" => array (

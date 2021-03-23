@@ -1,10 +1,10 @@
 <?php
 include "SystemConstant.php";
 
-define ( "JAVA_HOSTS", "localhost:8081" );
+define ( "JAVA_HOSTS", "localhost:8083" );
 require_once ($javaDir . DIRECTORY_SEPARATOR . "Java.inc");
 
-java_set_library_path ( $libDir );
+java_set_library_path ( "." . PATH_SEPARATOR . $libDir );
 
 function signature($src, $keystorePath, $keystorePassword, $keystoreAlias) {
 	$client = new Java ( "SignTest" );

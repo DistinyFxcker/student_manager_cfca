@@ -8,17 +8,17 @@ $str = array (
 				"txTime" => date ( "YmdHis" ) 
 		),
 		"enterprise" => array (
-				"enterpriseName" => "Test1",
-				"identTypeCode" => "3",
-				"identNo" => "123456",
-				"email" => "33900139002@cfca.com.cn",
-				"landlinePhone" => "58903552",
+				"enterpriseName" => "思邦的企业客户1",
+				"identTypeCode" => "Z",
+				"identNo" => "66666566666",
+				"email" => "2143213333@test01.com.cn",
+				"landlinePhone" => "028028028002",
 				"authenticationMode" => "公安部" 
 		),
 		"enterpriseTransactor" => array (
-				"transactorName" => "王五",
-				"identTypeCode" => "1",
-				"identNo" => "362321199112050011",
+				"transactorName" => "杨凡九",
+				"identTypeCode" => "Z",
+				"identNo" => "36232143143432",
 				"address" => "北京" 
 		) 
 );

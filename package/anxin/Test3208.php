@@ -11,13 +11,13 @@ $str = array (
 				"txTime" => "20160102235959" 
 		),
 		"signContractByCoordinate" => array (
-				"contractNo" => "ZL20161031000000001",
+				"contractNo" => "MM20171115000000061",
 				"signInfo" => array (
-						"userId" => "3FBCDD43E51B4C72E050007F01001D1C",
+						"userId" => "5DDA59FC95384BBAE05311016B0AA615",
 						"authorizationTime" => "20160801095509",
 						"location" => "211.94.108.226",
-						"signLocation" => "Signature2",
-						"projectCode" => "003",
+// 						"signLocation" => "Signature2",
+						"projectCode" => "002",
 						"imageData" => $imageData 
 				),
 				"signLocations" => array (

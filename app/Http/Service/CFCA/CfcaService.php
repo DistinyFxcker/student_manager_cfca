@@ -2,7 +2,7 @@
 namespace App\Http\Service\CFCA;
 define ( "JAVA_HOSTS", "localhost:8083" );
 require_once(base_path('package'.DIRECTORY_SEPARATOR.'anxin'.DIRECTORY_SEPARATOR.'java'.DIRECTORY_SEPARATOR.'Java.inc'));
-java_set_library_path ( "." . PATH_SEPARATOR . CfcaService::getAnxinLibPath() );
+java_set_library_path ( CfcaService::getAnxinLibPath() );
 
 class CfcaService{
 
@@ -11,7 +11,7 @@ class CfcaService{
     }
 
     public static function getAnxinLibPath(){
-        return base_path('package'.DIRECTORY_SEPARATOR.'anxi'.DIRECTORY_SEPARATOR.'lib');
+        return base_path('package'.DIRECTORY_SEPARATOR.'anxin'.DIRECTORY_SEPARATOR.'lib');
     }
 
     public static function getAnxinConfig(){

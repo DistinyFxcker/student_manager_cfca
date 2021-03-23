@@ -8,21 +8,23 @@ $str = array (
 				"txTime" => date ( "YmdHis" ) 
 		),
 		"person" => array (
-				"personName" => "张三",
+				"personName" => "渣渣",
 				"identTypeCode" => "0",
-				"identNo" => "362321199112050002",
-				"mobilePhone" => "15010111911",
-				"address" => "北京",
+				"identNo" => "612325198009090000",
+				"mobilePhone" => "13110018330",
+				"address" => "成都",
 				"authenticationMode" => "公安部" 
 		),
+		/*
 		"isVerifyBankCard" => "0",
 		"bankCardInfo" => array (
-				"panNo" => "43674******36766",
-				"mobilePhone" => "135*****111",
+				"panNo" => "766",
+				"mobilePhone" => "13110018330",
 				"cardType" => "1",
 				"validDate" => "1607",
 				"cvn2" => "012" 
 		) 
+		*/
 );
 
 $data = json_encode ( $str );

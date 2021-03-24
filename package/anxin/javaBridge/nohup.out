@@ -1,0 +1,9 @@
+Mar 24 16:03:56 VMBridge INFO : VM                  : 1.8.0_191@http://java.oracle.com/
+Mar 24 16:03:56 VMBridge INFO : VMBridge version             : 5.5.2    
+Mar 24 16:03:56 VMBridge INFO : logFile             : 
+Mar 24 16:03:56 VMBridge INFO : default logLevel    : 3
+Mar 24 16:03:56 VMBridge INFO : socket              : SERVLET_LOCAL:8083
+Mar 24 16:03:56 VMBridge INFO : java.ext.dirs       : /opt/java/jdk1.8.0_191/jre/lib/ext:/usr/java/packages/lib/ext
+Mar 24 16:03:56 VMBridge INFO : php.java.bridge.base: /root
+Mar 24 16:03:56 VMBridge INFO : thread pool size    : 20
+Mar 24 16:03:56 VMBridge INFO : JavaBridgeRunner started on port INET_LOCAL:8083

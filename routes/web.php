@@ -15,4 +15,4 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-$app->get('/cfca-text','CfcaSignController@openText');
+$app->post('/createaccount','CfcaSignController@openText');

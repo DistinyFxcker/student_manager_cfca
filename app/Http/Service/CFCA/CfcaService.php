@@ -104,7 +104,6 @@ class CfcaService{
         curl_setopt ( $curl, CURLOPT_SSLKEYPASSWD, config('cfca.sslcertPwd') );
         curl_setopt ( $curl, CURLOPT_SSLKEYTYPE, "PEM" );
         curl_setopt ( $curl, CURLOPT_CAINFO, self::Cacert() );
-	dd(file_exists(self::sslCert()));
         curl_setopt ( $curl, CURLOPT_POSTFIELDS, $req );
 
         if ($boundary != "") {
